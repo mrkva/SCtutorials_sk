@@ -3,6 +3,7 @@
 \usetheme{Warsaw}
 \usepackage{hyperref}
 \usepackage[utf8]{inputenc}
+\usepackage{color}
 
 \title{Supercollider pre začiatočníkov}
 \author{Jonáš Gruska}
@@ -55,16 +56,23 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{bla}
+	\frametitle{Základy syntaxe a orientácia}
 	\begin{itemize}
-		\item
+		\item \texttt{(2+2).postln} 
+		\item \texttt{a = [1, 5, 8]}
+		\item \texttt{a.reverse $\rightarrow$ [8, 5, 1]}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
-	\frametitle{bla}
+	\frametitle{Prvé audio}
 	\begin{itemize}
-		\item
+		\item \emph{Boot serverov (localhost / internal)}
+		\item \texttt{\{\textcolor{blue}{SinOsc.ar}(333, 0, 1)\}.play}
+		\item \texttt{\{\textcolor{blue}{SinOsc.ar}([200, 500], 0, 1)\}.play}
+		\item \texttt{\{\textcolor{blue}{SinOsc.ar}(\textcolor{blue}{MouseX.kr}(100, 1000), 0, 1)\}.play}
+		\item \texttt{\{\textcolor{blue}{PinkNoise.ar}(0.4)\}.play}
+		
 	\end{itemize}
 \end{frame}
 
