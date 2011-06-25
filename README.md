@@ -1,0 +1,2 @@
+Supercollider tutorialy po slovensky
+=================================
